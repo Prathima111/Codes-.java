@@ -1,0 +1,33 @@
+import java.util.*;
+class Hashmap 
+{
+    public static void main(String [] args )
+    {
+       HashMap<String ,String >cc=new HashMap<String ,String>();
+       cc.put("Name ","Prathima");
+       cc.put("Mom","Laxmi ");
+       cc.put("Pappa","Thirupathi");
+       cc.put("Bro","Sai");
+       cc.put("pet","heidi ");
+
+       System.out.println(cc);
+       cc.remove("pet");
+       System.out.println(cc);
+       System.out.println(cc.size());
+       //loops in hashmap 
+       //print keys 
+       for(String i: cc.keySet()){
+        System.out.println(i);
+       }
+       //print values 
+       for(String i:cc.values())
+       {
+        System.out.println(i);
+       }
+       //print keys and values 
+       for(String i:cc.keySet())
+       {
+        System.out.println("key : "+i+" value :"+cc.get(i));
+       }
+    }
+}
